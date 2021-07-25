@@ -27,7 +27,7 @@ def load_saved_artifacts():
     global  __data_columns
     global __locations
 
-    with open("C:\\Users\Biswas\Desktop\Git(Imp)\Flask\File\columns.json", "r") as f:
+    with open("C:/Users/Biswas/Desktop/Git(Imp)/Flask/File/columns.json", "r") as f:
         __data_columns = json.load(f)['data_columns']
         __locations = __data_columns[3:]  
 
