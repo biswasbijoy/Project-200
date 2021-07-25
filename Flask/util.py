@@ -27,13 +27,13 @@ def load_saved_artifacts():
     global  __data_columns
     global __locations
 
-    with open("D:/programming/forgit/Flask/File/columns.json", "r") as f:
+    with open("C:\\Users\Biswas\Desktop\Git(Imp)\Flask\File\columns.json", "r") as f:
         __data_columns = json.load(f)['data_columns']
         __locations = __data_columns[3:]  
 
     global __model
     if __model is None:
-        with open('D:/programming/forgit/Flask/File/Bangladesh_home_price.pickle', 'rb') as f:
+        with open('C:\\Users\Biswas\Desktop\Git(Imp)\Flask\File\Bangladesh_home_price.pickle', 'rb') as f:
             __model = pickle.load(f)
     print("loading saved artifacts...done")
 
